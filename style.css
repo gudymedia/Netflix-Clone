@@ -1,0 +1,237 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contain {
+    background: #333 url(./images/netflix.jpg) no-repeat center center/cover;
+    /* opacity: 0.9; */
+    /* background-color: black; */
+    background-blend-mode: overlay;
+}
+
+.container .main h1 {
+    font-size: clamp(30px,8vh,100px);
+}
+
+.menu {
+    height: 100px;
+    /* background-color: #69090e; */
+    background-image: linear-gradient(to bottom, black,#ffffff00);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.bottom_grd {
+    height: 100px;
+    /* background-color: #69090e; */
+    background-image: linear-gradient(to top, black,#ffffff00);
+}
+.logo {
+    position: absolute;
+    top: 5px;
+    margin-left: 5px;
+    width: 80px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .btn {
+    text-align: center;
+} */
+
+.btn_sn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e50913;
+    color: white;
+    font-size: 11px;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 60px;
+    height: 25px;
+    transition: 1s;
+}
+.btn_sn:hover {
+    background-color: #69090e;
+    color: white;
+    font-size: 11px;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 60px;
+    height: 25px;
+    transition: 1s;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.email {
+    padding: 10px;
+    background-color: #0000007c;
+    border: 1px solid #575757;
+    min-width: 400px;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+}
+
+input::placeholder {
+    color: #d6d2d2;
+    font-size: 12px;
+}
+
+.btn1 {
+    background-color: #e50914;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 110px;
+    transition: 1s;
+}
+.btn1:hover {
+    background-color: #69090e;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 110px;
+    transition: 1s;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .btn1 {
+        display: block;
+        margin: auto;
+        padding: 12px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    .btn1:hover {
+        display: block;
+        margin: auto;
+        padding: 12px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    .main>p {
+        font-size: 16px;
+    }
+
+    .email {
+        padding: 10px;
+        background-color: #0000007c;
+        border: 1px solid #575757;
+        max-width: 400px;
+        border-radius: 3px;
+        outline: none;
+        color: white;
+    }
+}
+
+
+/* ------------------------------ */
+
+
+/* LOGIIN SECTION */
+
+form {
+    background-color: #000000b0;
+    width: 350px;
+    min-height: 400px;
+    max-height: 600px;
+    text-align: left;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.email1 {
+    padding: 10px;
+    background-color: #575757;
+    border: 1px solid #575757;
+    width: 96%;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+}
+
+.signin {
+    background-color: #e50913;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 96%;
+    transition: 1s;
+}
+.signin:hover {
+    background-color: #69090e;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 96%;
+    transition: 1s;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+/* Resolve CHeckbox issue */
+/* .checkbox {
+    background: yellow;
+} */
+
+span, .need_help, .text {
+    font-size: 11px;
+    color: #d6d2d2;
+}
+
+.sign_L {
+    color: white;
+    font-size: 14px;
+}
+
+.learn_more{
+    color: blue;
+}
